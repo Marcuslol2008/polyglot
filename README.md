@@ -45,4 +45,4 @@
 - **Mobile-first:** uma coluna no celular. Com mais de 40rem, as conquistas e os campos do formulário passam a duas colunas. Com mais de 60rem, o `aside` vira uma barra lateral fixa.
 - Imagens com `max-width: 100%` e `height: auto`.
 - Acessibilidade: `:focus-visible` bem visível, `prefers-reduced-motion` respeitado e contraste alto entre texto e fundo.
-- Site publicado no GitHub Pages (branch `main`, pasta raiz): [https://github.com/Marcuslol2008/polyglot](https://marcuslol2008.github.io/polyglot/)
+- Site publicado no GitHub Pages (branch `main`, pasta raiz): [https://marcuslol2008.github.io/polyglot/](https://marcuslol2008.github.io/polyglot/)
