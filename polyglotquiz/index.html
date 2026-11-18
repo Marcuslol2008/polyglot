@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="PolyglotQuiz: o jogo de adivinhar a linguagem de programação a partir de um trecho de código misterioso.">
+  <title>PolyglotQuiz - O Jogo do Adivinhe a Linguagem</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <h1>Polyglot<span>Quiz</span></h1>
+    <p class="tagline">O jogo do <strong>Adivinhe a Linguagem</strong>: veja o código, escolha a linguagem e suba no ranking.</p>
+    <nav class="main-nav" aria-label="Navegação principal">
+      <ul>
+        <li><a href="#como-funciona">Como funciona</a></li>
+        <li><a href="#desafio">Desafio</a></li>
+        <li><a href="#ranking">Ranking</a></li>
+        <li><a href="#curiosidades">Curiosidades</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="layout">
+    <main id="conteudo">
+
+      <section id="como-funciona">
+        <h2>Como funciona</h2>
+        <p>
+          O PolyglotQuiz mostra um <strong>trecho de código misterioso</strong> e quatro opções de
+          linguagem. Pode ser algo simples, como calcular um fatorial ou inverter uma string, ou algo
+          bizarro, como um programa em Brainfuck. Quanto mais rápido você acertar, <em>mais pontos</em> ganha.
+        </p>
+        <ol>
+          <li>Leia o código com atenção.</li>
+          <li>Escolha uma das quatro linguagens.</li>
+          <li>Ganhe pontos por acertos rápidos e desbloqueie conquistas.</li>
+          <li>Veja seu nome no ranking.</li>
+        </ol>
+      </section>
+
+      <section id="desafio">
+        <h2>Desafio da rodada</h2>
+        <p>Qual é a linguagem deste código? Ele calcula o fatorial de um número.</p>
+        <pre><code>fatorial :: Integer -&gt; Integer
+fatorial 0 = 1
+fatorial n = n * fatorial (n - 1)</code></pre>
+
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Escolha a linguagem</legend>
+            <div class="option">
+              <input type="radio" id="op-python" name="linguagem" value="python" required>
+              <label for="op-python">Python</label>
+            </div>
+            <div class="option">
+              <input type="radio" id="op-haskell" name="linguagem" value="haskell">
+              <label for="op-haskell">Haskell</label>
+            </div>
+            <div class="option">
+              <input type="radio" id="op-ocaml" name="linguagem" value="ocaml">
+              <label for="op-ocaml">OCaml</label>
+            </div>
+            <div class="option">
+              <input type="radio" id="op-elixir" name="linguagem" value="elixir">
+              <label for="op-elixir">Elixir</label>
+            </div>
+          </fieldset>
+          <button type="submit">Responder</button>
+        </form>
+      </section>
+
+      <section id="ranking">
+        <h2>Ranking e conquistas</h2>
+        <p>Ranking de exemplo.</p>
+
+        <div class="table-wrap">
+          <table>
+            <caption>Top 5 jogadores (dados de exemplo)</caption>
+            <thead>
+              <tr>
+                <th scope="col">Posição</th>
+                <th scope="col">Jogador</th>
+                <th scope="col">Pontos</th>
+                <th scope="col">Acertos</th>
+                <th scope="col">Última partida</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1º</th>
+                <td>Ada</td>
+                <td>980</td>
+                <td>10 de 10</td>
+                <td><time datetime="2026-11-12">12/11/2026</time></td>
+              </tr>
+              <tr>
+                <th scope="row">2º</th>
+                <td>Linus</td>
+                <td>870</td>
+                <td>9 de 10</td>
+                <td><time datetime="2026-11-12">12/11/2026</time></td>
+              </tr>
+              <tr>
+                <th scope="row">3º</th>
+                <td>Grace</td>
+                <td>760</td>
+                <td>8 de 10</td>
+                <td><time datetime="2026-11-11">11/11/2026</time></td>
+              </tr>
+              <tr>
+                <th scope="row">4º</th>
+                <td>Dennis</td>
+                <td>640</td>
+                <td>7 de 10</td>
+                <td><time datetime="2026-11-10">10/11/2026</time></td>
+              </tr>
+              <tr>
+                <th scope="row">5º</th>
+                <td>Margaret</td>
+                <td>510</td>
+                <td>6 de 10</td>
+                <td><time datetime="2026-11-09">09/11/2026</time></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Conquistas</h3>
+        <ul class="achievements">
+          <li><strong>Primeiro passo:</strong> acertou o primeiro código.</li>
+          <li><strong>Relâmpago:</strong> acertou em menos de 5 segundos.</li>
+          <li><strong>Funcional:</strong> acertou um código em Haskell.</li>
+          <li><strong>Mente aberta:</strong> acertou um código em Brainfuck.</li>
+        </ul>
+      </section>
+
+      <section id="curiosidades">
+        <h2>Curiosidades</h2>
+        <p>Por que cada linguagem tem aquela sintaxe? Veja três histórias.</p>
+
+        <article>
+          <h3>Brainfuck: poucos comandos, muita paciência</h3>
+          <figure>
+            <img src="images/brainfuck.svg" alt="Janela de editor escura mostrando linhas de código Brainfuck formadas apenas por símbolos como mais, menos, colchetes e setas" width="640" height="360">
+            <figcaption>Um programa em Brainfuck é só uma sequência de símbolos.</figcaption>
+          </figure>
+          <p>
+            Criada em <time datetime="1993">1993</time> por Urban Müller, a linguagem tem só
+            <strong>8 comandos</strong>. A ideia era fazer o menor compilador possível. O resultado é
+            uma sintaxe que parece ruído, mas que é <em>completa</em> do ponto de vista computacional.
+          </p>
+        </article>
+
+        <article>
+          <h3>Haskell: funções puras e casamento de padrões</h3>
+          <figure>
+            <img src="images/haskell.svg" alt="Letra lambda grande em roxo ao lado de uma função fatorial escrita em Haskell" width="640" height="360">
+            <figcaption>O fatorial em Haskell é quase uma definição matemática.</figcaption>
+          </figure>
+          <p>
+            Haskell nasceu na academia, inspirada no <strong>cálculo lambda</strong>. Por isso o
+            fatorial se escreve como na matemática: um caso para o zero e outro para os demais
+            números. A assinatura de tipos vem antes e descreve o que a função recebe e devolve.
+          </p>
+        </article>
+
+        <article>
+          <h3>Python: a indentação é a sintaxe</h3>
+          <figure>
+            <img src="images/python.svg" alt="Código Python de fatorial com barras coloridas destacando os níveis de indentação" width="640" height="360">
+            <figcaption>Em Python, o recuo define os blocos de código.</figcaption>
+          </figure>
+          <p>
+            Guido van Rossum quis um código que fosse <em>fácil de ler</em>. Em vez de chaves, Python
+            usa o recuo para marcar onde cada bloco começa e termina. Assim, o código bem formatado é
+            também o código correto.
+          </p>
+        </article>
+      </section>
+
+      <section id="contato">
+        <h2>Contato</h2>
+        <p>Tem uma sugestão de código misterioso para o quiz? Mande para a gente.</p>
+
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Seus dados</legend>
+            <div class="form-row">
+              <div class="field">
+                <label for="nome">Nome completo</label>
+                <input type="text" id="nome" name="nome" autocomplete="name" required>
+              </div>
+              <div class="field">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" autocomplete="email" required>
+              </div>
+            </div>
+            <div class="field">
+              <label for="perfil">Perfil no GitHub <span class="hint">Opcional</span></label>
+              <input type="url" id="perfil" name="perfil" placeholder="https://github.com/seu-usuario">
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Sua sugestão</legend>
+            <div class="field">
+              <label for="linguagem-favorita">Linguagem da sugestão</label>
+              <select id="linguagem-favorita" name="linguagem-favorita">
+                <option value="">Selecione</option>
+                <option value="python">Python</option>
+                <option value="haskell">Haskell</option>
+                <option value="brainfuck">Brainfuck</option>
+                <option value="outra">Outra</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+            </div>
+            <div class="option">
+              <input type="checkbox" id="novidades" name="novidades">
+              <label for="novidades">Quero receber novidades do PolyglotQuiz</label>
+            </div>
+          </fieldset>
+
+          <button type="submit">Enviar mensagem</button>
+        </form>
+      </section>
+
+    </main>
+
+    <aside>
+      <h2>Você sabia?</h2>
+      <p>
+        A primeira linguagem de programação de alto nível com compilador foi o
+        <strong>FORTRAN</strong>, criado na IBM por uma equipe liderada por John Backus.
+      </p>
+      <p>
+        <em>Dica de jogo:</em> procure palavras-chave, símbolos e o jeito de marcar blocos. Eles
+        entregam a linguagem rápido.
+      </p>
+    </aside>
+  </div>
+
+  <footer class="site-footer">
+    <address>
+      Contato: <a href="mailto:contato@polyglotquiz.example">contato@polyglotquiz.example</a>
+    </address>
+    <p>
+      PolyglotQuiz, projeto de HTML e CSS. Atualizado em
+      <time datetime="2026-11-13">13 de novembro de 2026</time>.
+    </p>
+  </footer>
+</body>
+</html>
