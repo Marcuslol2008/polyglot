@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360">
+  <rect width="640" height="360" fill="#0d1117"/>
+  <rect x="24" y="24" width="592" height="312" rx="12" fill="#161b22" stroke="#30363d" stroke-width="2"/>
+  <circle cx="52" cy="50" r="7" fill="#ff5f56"/>
+  <circle cx="76" cy="50" r="7" fill="#ffbd2e"/>
+  <circle cx="100" cy="50" r="7" fill="#27c93f"/>
+  <g font-family="Courier New, monospace" font-size="26" fill="#7ee787">
+    <text x="52" y="120">++++++++[&gt;++++[&gt;++&gt;+++&gt;+++&gt;+&lt;&lt;&lt;&lt;-]</text>
+    <text x="52" y="160" fill="#79c0ff">&gt;+&gt;+&gt;-&gt;&gt;+[&lt;]&lt;-]&gt;&gt;.&gt;---.+++++++</text>
+    <text x="52" y="200" fill="#ffa657">..+++.&gt;&gt;.&lt;-.&lt;.+++.------.--------.</text>
+    <text x="52" y="240" fill="#d2a8ff">&gt;&gt;+.&gt;++.[-&lt;+&gt;]&lt;&lt;&lt;&lt;+[&gt;&gt;.&lt;&lt;-]</text>
+  </g>
+  <text x="52" y="300" font-family="Courier New, monospace" font-size="18" fill="#8b949e">8 comandos. Nenhuma letra. Muita paciência.</text>
+</svg>

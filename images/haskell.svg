@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360">
+  <rect width="640" height="360" fill="#1b1033"/>
+  <text x="40" y="270" font-family="Georgia, serif" font-size="300" fill="#7b4bd1" opacity="0.55">λ</text>
+  <g font-family="Courier New, monospace" font-size="24" fill="#f0e6ff">
+    <text x="250" y="130">fatorial :: Integer</text>
+    <text x="250" y="165">         -&gt; Integer</text>
+    <text x="250" y="215" fill="#ffd479">fatorial 0 = 1</text>
+    <text x="250" y="250" fill="#ffd479">fatorial n =</text>
+    <text x="250" y="285" fill="#ffd479">  n * fatorial (n - 1)</text>
+  </g>
+  <path d="M250 300 H600" stroke="#7b4bd1" stroke-width="3" stroke-dasharray="8 6"/>
+</svg>
