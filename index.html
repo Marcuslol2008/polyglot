@@ -3,9 +3,36 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="PolyglotQuiz: o jogo de adivinhar a linguagem de programação a partir de um trecho de código misterioso.">
-  <title>PolyglotQuiz - O Jogo do Adivinhe a Linguagem</title>
+  <title>PolyglotQuiz: adivinhe a linguagem de programação do código</title>
+  <meta name="description" content="Quiz de programação: veja um trecho de código misterioso, escolha entre 4 linguagens, ganhe pontos por acertos rápidos e entre no ranking.">
+  <link rel="canonical" href="https://marcuslol2008.github.io/polyglot/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="PolyglotQuiz">
+  <meta property="og:title" content="PolyglotQuiz: adivinhe a linguagem do código">
+  <meta property="og:description" content="Veja um código misterioso, escolha a linguagem certa e suba no ranking.">
+  <meta property="og:image" content="https://marcuslol2008.github.io/polyglot/images/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Logotipo PolyglotQuiz com um código em Haskell e quatro opções de linguagem">
+  <meta property="og:url" content="https://marcuslol2008.github.io/polyglot/">
+  <meta property="og:locale" content="pt_BR">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "PolyglotQuiz",
+    "alternateName": "O Jogo do Adivinhe a Linguagem",
+    "url": "https://marcuslol2008.github.io/polyglot/",
+    "description": "Quiz de programação em que o jogador adivinha a linguagem de um trecho de código misterioso.",
+    "inLanguage": "pt-BR"
+  }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
@@ -15,10 +42,12 @@
     <p class="tagline">O jogo do <strong>Adivinhe a Linguagem</strong>: veja o código, escolha a linguagem e suba no ranking.</p>
     <nav class="main-nav" aria-label="Navegação principal">
       <ul>
-        <li><a href="#como-funciona">Como funciona</a></li>
+        <li><a href="index.html" aria-current="page">Início</a></li>
         <li><a href="#desafio">Desafio</a></li>
         <li><a href="#ranking">Ranking</a></li>
         <li><a href="#curiosidades">Curiosidades</a></li>
+        <li><a href="linguagens.html">Linguagens</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
         <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
@@ -40,6 +69,10 @@
           <li>Ganhe pontos por acertos rápidos e desbloqueie conquistas.</li>
           <li>Veja seu nome no ranking.</li>
         </ol>
+        <p>
+          Quer saber quanto vale cada resposta? Veja a
+          <a href="sobre.html#pontuacao">tabela de pontuação do PolyglotQuiz</a>.
+        </p>
       </section>
 
       <section id="desafio">
@@ -145,7 +178,7 @@ fatorial n = n * fatorial (n - 1)</code></pre>
         <article>
           <h3>Brainfuck: poucos comandos, muita paciência</h3>
           <figure>
-            <img src="images/brainfuck.svg" alt="Janela de editor escura mostrando linhas de código Brainfuck formadas apenas por símbolos como mais, menos, colchetes e setas" width="640" height="360">
+            <img src="images/brainfuck.svg" alt="Janela de editor escura mostrando linhas de código Brainfuck formadas apenas por símbolos como mais, menos, colchetes e setas" width="640" height="360" loading="lazy">
             <figcaption>Um programa em Brainfuck é só uma sequência de símbolos.</figcaption>
           </figure>
           <p>
@@ -153,12 +186,15 @@ fatorial n = n * fatorial (n - 1)</code></pre>
             <strong>8 comandos</strong>. A ideia era fazer o menor compilador possível. O resultado é
             uma sintaxe que parece ruído, mas que é <em>completa</em> do ponto de vista computacional.
           </p>
+          <p>
+            <a href="linguagens.html#brainfuck">Veja como reconhecer Brainfuck no guia de linguagens</a>.
+          </p>
         </article>
 
         <article>
           <h3>Haskell: funções puras e casamento de padrões</h3>
           <figure>
-            <img src="images/haskell.svg" alt="Letra lambda grande em roxo ao lado de uma função fatorial escrita em Haskell" width="640" height="360">
+            <img src="images/haskell.svg" alt="Letra lambda grande em roxo ao lado de uma função fatorial escrita em Haskell" width="640" height="360" loading="lazy">
             <figcaption>O fatorial em Haskell é quase uma definição matemática.</figcaption>
           </figure>
           <p>
@@ -166,18 +202,24 @@ fatorial n = n * fatorial (n - 1)</code></pre>
             fatorial se escreve como na matemática: um caso para o zero e outro para os demais
             números. A assinatura de tipos vem antes e descreve o que a função recebe e devolve.
           </p>
+          <p>
+            <a href="linguagens.html#haskell">Veja como reconhecer Haskell no guia de linguagens</a>.
+          </p>
         </article>
 
         <article>
           <h3>Python: a indentação é a sintaxe</h3>
           <figure>
-            <img src="images/python.svg" alt="Código Python de fatorial com barras coloridas destacando os níveis de indentação" width="640" height="360">
+            <img src="images/python.svg" alt="Código Python de fatorial com barras coloridas destacando os níveis de indentação" width="640" height="360" loading="lazy">
             <figcaption>Em Python, o recuo define os blocos de código.</figcaption>
           </figure>
           <p>
             Guido van Rossum quis um código que fosse <em>fácil de ler</em>. Em vez de chaves, Python
             usa o recuo para marcar onde cada bloco começa e termina. Assim, o código bem formatado é
             também o código correto.
+          </p>
+          <p>
+            <a href="linguagens.html#python">Veja como reconhecer Python no guia de linguagens</a>.
           </p>
         </article>
       </section>
@@ -251,8 +293,12 @@ fatorial n = n * fatorial (n - 1)</code></pre>
       Contato: <a href="mailto:contato@polyglotquiz.example">contato@polyglotquiz.example</a>
     </address>
     <p>
+      <a href="sobre.html">Sobre o PolyglotQuiz</a> ·
+      <a href="linguagens.html">Guia de linguagens</a>
+    </p>
+    <p>
       PolyglotQuiz, projeto de HTML e CSS. Atualizado em
-      <time datetime="2026-11-17">17 de novembro de 2026</time>.
+      <time datetime="2026-11-25">25 de novembro de 2026</time>.
     </p>
   </footer>
 </body>

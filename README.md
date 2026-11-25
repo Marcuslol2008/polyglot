@@ -46,3 +46,31 @@
 - Imagens com `max-width: 100%` e `height: auto`.
 - Acessibilidade: `:focus-visible` bem visível, `prefers-reduced-motion` respeitado e contraste alto entre texto e fundo.
 - Site publicado no GitHub Pages (branch `main`, pasta raiz): [https://marcuslol2008.github.io/polyglot/](https://marcuslol2008.github.io/polyglot/)
+
+# Atividade 2: SEO
+
+Resumo do que foi feito. Os detalhes e as medições com Lighthouse estão em [SEO.md](SEO.md).
+
+- **Duas páginas novas**, para testar a navegação: [Linguagens](linguagens.html) (guia com o mesmo código em quatro linguagens) e [Sobre](sobre.html) (pontuação, conquistas e próximas etapas). O menu é o mesmo nas três páginas, e as internas têm trilha de navegação.
+- **`title`, `description` e `canonical`** únicos em cada página.
+- **Open Graph** completo, com imagem de 1200×630 px (`images/og-cover.png`), e **favicon** em `favicon.svg`.
+- **JSON-LD** em cada página: `WebSite` no início, `CollectionPage` no guia e `AboutPage` na página Sobre, estas duas com `BreadcrumbList`.
+- **`robots.txt` e `sitemap.xml`** na raiz, com URLs absolutas.
+- **Imagens, URLs e links internos:** `alt`, `width`, `height` e `loading="lazy"`, links com texto descritivo e arquivos com nomes curtos.
+- **Lighthouse antes e depois** em [SEO.md](SEO.md).
+
+## Estrutura atual
+
+```
+polyglot/
+├── index.html
+├── linguagens.html
+├── sobre.html
+├── favicon.svg
+├── robots.txt
+├── sitemap.xml
+├── SEO.md
+├── css/style.css
+├── images/ (brainfuck.svg, haskell.svg, python.svg, og-cover.png)
+└── prints/ (validador.png, lighthouse-antes.png, lighthouse-depois.png)
+```
