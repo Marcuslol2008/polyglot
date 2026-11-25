@@ -1,48 +1,45 @@
-## Atividade 1: o que foi feito
+# PolyglotQuiz — O Jogo do Adivinhe a Linguagem
 
-# 1. `lang`, `meta viewport`, `title` e landmarks
-- `lang="pt-BR"` no `<html>`, `meta viewport` para o layout responsivo e `title` próprio: "PolyglotQuiz - O Jogo do Adivinhe a Linguagem".
-- `header` com o nome do site, a tagline e o `nav` com âncoras para as seções.
-- `main` com todo o conteúdo principal (Como funciona, Desafio, Ranking, Curiosidades e Contato).
-- `aside` com a caixa "Você sabia?" (curiosidade e dica de jogo), que complementa o conteúdo sem fazer parte dele.
-- `footer` com o contato e a data de atualização.
-- Dentro do `main`, cada parte é uma `section` com `h2`, e os conteúdos independentes de Curiosidades são `article`.
+Projeto desenvolvido para a disciplina **Linguagem de Script para Web** (IFTM - Campus Uberaba Parque Tecnológico, 2026).
 
-# 2. Hierarquia de títulos e 3 `article`
-- Um único `h1` (o nome do site), seguido de `h2` para cada seção e `h3` para os títulos dos artigos e das conquistas, sem saltos de nível.
-- 3 `article` na seção Curiosidades, todos sobre o tema: **Brainfuck** (8 comandos, sintaxe que parece ruído), **Haskell** (funções puras e casamento de padrões) e **Python** (a indentação é a sintaxe).
+- **Tema escolhido:** quiz gamificado em que o jogador vê um trecho de código misterioso e adivinha a linguagem de programação entre 4 opções
+- **Site publicado (GitHub Pages):** [https://marcuslol2008.github.io/polyglot/](https://marcuslol2008.github.io/polyglot/)
 
-# 3. Imagens em `figure` + `figcaption`
-- 3 imagens SVG próprias, uma por artigo: `brainfuck.svg`, `haskell.svg` e `python.svg`.
-- Cada uma está em uma `figure` com `figcaption` e tem `alt` descritivo do conteúdo, além de `width` e `height` definidos, o que evita deslocamento de layout.
+## Atividade 1 — Página Semântica
 
-# 4. Tabela acessível
-- Ranking de exemplo na seção "Ranking e conquistas", com `caption`, `thead`, `tbody` e `th` com `scope`.
-- `scope="col"` nos cabeçalhos de coluna e `scope="row"` na posição de cada jogador.
-- A tabela fica em um contêiner com rolagem horizontal, para não quebrar em telas pequenas.
+Nesta etapa foi desenvolvida a página inicial do projeto utilizando exclusivamente HTML5 semântico e CSS3 externo responsivo:
 
-# 5. Formulário de contato
-- Seção "Contato", com `label` ligado por `for`/`id` a todos os campos.
-- Tipos corretos: `text` (nome), `email`, `url` (perfil do GitHub), `select`, `textarea` e `checkbox`.
-- Dois `fieldset` com `legend`: "Seus dados" e "Sua sugestão".
-- `required` nos campos obrigatórios e `autocomplete` em nome e e-mail.
-- O formulário do desafio (opções de linguagem em `radio`) segue o mesmo padrão, com `fieldset` e `legend`.
+- Estrutura com landmarks (`header`, `nav`, `main`, `aside`, `footer`) e link de acessibilidade "Pular para o conteúdo".
+- `lang="pt-BR"`, `meta viewport` e `title` próprio.
+- Hierarquia estrita de títulos (`h1` único até `h3` sem saltos de nível).
+- Três artigos em destaque (Brainfuck, Haskell e Python) utilizando `figure`, `figcaption`, atributos `alt` descritivos e dimensões (`width` e `height`).
+- Tabela de ranking estruturada com `caption`, `thead`, `tbody` e `th` com `scope`.
+- Formulário de contato acessível, agrupado com `fieldset`/`legend` e todos os campos associados a `label`, com tipos corretos (`text`, `email`, `url`, `select`, `textarea` e `checkbox`).
+- Uso de `time`, `address`, `strong` e `em` onde fazem sentido.
+- CSS externo (`css/style.css`) em abordagem mobile-first: uma coluna no celular, duas colunas em telas médias e barra lateral (`aside`) em telas grandes.
 
-# 6. `time`, `address`, `strong`/`em` e link "pular para o conteúdo"
-- `time` com `datetime` nas datas do ranking, no ano de criação do Brainfuck e na atualização do rodapé.
-- `address` no rodapé, com o e-mail de contato.
-- `strong` para termos-chave (ex.: "8 comandos", "Adivinhe a Linguagem") e `em` para ênfase (ex.: "mais pontos", "fácil de ler").
-- Link **"Pular para o conteúdo"** logo no início do `<body>`. Ele fica escondido e aparece ao receber foco pelo teclado, levando direto ao `<main>`.
+### Validação W3C
 
-# 7. Zero erros no validador W3C
-- HTML escrito sem tags fora de ordem, sem `id` repetido e com todo campo associado a um `label`.
-- Validado em validator.w3.org/nu. Print do resultado:
+![Resultado da validação no W3C Nu Html Checker, sem erros](prints/validador-index.png)
 
-[Validação W3C sem erros](prints/validador.png)
+## Atividade 2 — SEO
 
-# 8. CSS externo, responsivo e GitHub Pages
-- `css/style.css` é um arquivo externo e simples, com variáveis CSS (`:root`) para as cores e tema escuro de terminal.
-- **Mobile-first:** uma coluna no celular. Com mais de 40rem, as conquistas e os campos do formulário passam a duas colunas. Com mais de 60rem, o `aside` vira uma barra lateral fixa.
-- Imagens com `max-width: 100%` e `height: auto`.
-- Acessibilidade: `:focus-visible` bem visível, `prefers-reduced-motion` respeitado e contraste alto entre texto e fundo.
-- Site publicado no GitHub Pages (branch `main`, pasta raiz): [https://marcuslol2008.github.io/polyglot/](https://marcuslol2008.github.io/polyglot/)
+Nesta etapa o site foi otimizado para buscadores e ganhou duas páginas novas, que também permitem testar a navegação entre páginas. Os detalhes e as medições com Lighthouse estão em [SEO.md](SEO.md).
+
+- **Novas páginas:** [Linguagens](linguagens.html) (o mesmo código em Python, Haskell, JavaScript e Brainfuck, com as pistas de cada sintaxe) e [Sobre](sobre.html) (pontuação, conquistas e próximas etapas). O menu é o mesmo nas três páginas, e as páginas internas têm trilha de navegação.
+- **`title`, `description` e `canonical`** únicos em cada página.
+- **Open Graph** completo, com imagem de 1200×630 px (`images/og-cover.png`), e **favicon** em `favicon.svg`.
+- **Dados estruturados (JSON-LD)** em cada página: `WebSite` no início, `CollectionPage` no guia de linguagens e `AboutPage` na página Sobre.
+- **`robots.txt` e `sitemap.xml`** na raiz do projeto, com URLs absolutas.
+- **Imagens, URLs e links internos:** imagens com `alt`, `width`, `height` e `loading="lazy"`, links com texto descritivo e arquivos com nomes curtos e sem parâmetros.
+- **Lighthouse antes e depois:** comparação das notas da versão da Atividade 1 com a versão otimizada, em [SEO.md](SEO.md).
+
+### Validação W3C
+
+![Resultado da validação no W3C Nu Html Checker, sem erros](prints/validador-index.png)
+![](prints/validador-linguagens.png)
+![](prints/validador-sobre.png)
+
+### Lighthouse Antes/Depois
+![Medições do site com Lighthouse na versão anterior](prints/lighthouse-antes.png)
+![Medições do site com Lighthouse na versão atual](prints/lighthouse-depois.png)

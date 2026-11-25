@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sobre o jogo, pontuação e conquistas | PolyglotQuiz</title>
+  <meta name="description" content="Entenda as regras do PolyglotQuiz: como funciona a pontuação por tempo de resposta, quais conquistas existem e o que vem nas próximas versões.">
+  <link rel="canonical" href="https://marcuslol2008.github.io/polyglot/sobre.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="PolyglotQuiz">
+  <meta property="og:title" content="Sobre o PolyglotQuiz: pontuação e conquistas">
+  <meta property="og:description" content="Pontos por tempo de resposta, conquistas e próximas etapas do quiz de linguagens.">
+  <meta property="og:image" content="https://marcuslol2008.github.io/polyglot/images/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Logotipo PolyglotQuiz com um código em Haskell e quatro opções de linguagem">
+  <meta property="og:url" content="https://marcuslol2008.github.io/polyglot/sobre.html">
+  <meta property="og:locale" content="pt_BR">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "AboutPage",
+        "@id": "https://marcuslol2008.github.io/polyglot/sobre.html#pagina",
+        "name": "Sobre o jogo, pontuação e conquistas",
+        "description": "Regras de pontuação, conquistas e próximas etapas do PolyglotQuiz.",
+        "url": "https://marcuslol2008.github.io/polyglot/sobre.html",
+        "inLanguage": "pt-BR",
+        "dateModified": "2026-11-25",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "PolyglotQuiz",
+          "url": "https://marcuslol2008.github.io/polyglot/"
+        },
+        "breadcrumb": { "@id": "https://marcuslol2008.github.io/polyglot/sobre.html#caminho" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://marcuslol2008.github.io/polyglot/sobre.html#caminho",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Início",
+            "item": "https://marcuslol2008.github.io/polyglot/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Sobre",
+            "item": "https://marcuslol2008.github.io/polyglot/sobre.html"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <p class="site-name"><a href="index.html">Polyglot<span>Quiz</span></a></p>
+    <p class="tagline">O jogo do <strong>Adivinhe a Linguagem</strong>: veja o código, escolha a linguagem e suba no ranking.</p>
+    <nav class="main-nav" aria-label="Navegação principal">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="index.html#desafio">Desafio</a></li>
+        <li><a href="index.html#ranking">Ranking</a></li>
+        <li><a href="index.html#curiosidades">Curiosidades</a></li>
+        <li><a href="linguagens.html">Linguagens</a></li>
+        <li><a href="sobre.html" aria-current="page">Sobre</a></li>
+        <li><a href="index.html#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="layout">
+    <main id="conteudo">
+
+      <nav class="breadcrumb" aria-label="Você está em">
+        <ol>
+          <li><a href="index.html">Início</a></li>
+          <li aria-current="page">Sobre</li>
+        </ol>
+      </nav>
+
+      <h1>Sobre o PolyglotQuiz</h1>
+      <p>
+        O PolyglotQuiz é um quiz para quem programa: o site mostra um <strong>trecho de código
+        misterioso</strong> e você escolhe, entre quatro opções, qual é a linguagem. É um projeto da
+        disciplina de Linguagem de Script para Web, feito por enquanto só com HTML e CSS.
+      </p>
+
+      <section id="pontuacao">
+        <h2>Como funciona a pontuação</h2>
+        <p>
+          Quanto mais rápido o acerto, <em>mais pontos</em>. Esta é a regra planejada para a versão
+          com JavaScript.
+        </p>
+        <div class="table-wrap">
+          <table>
+            <caption>Pontos por acerto, de acordo com o tempo de resposta</caption>
+            <thead>
+              <tr>
+                <th scope="col">Tempo de resposta</th>
+                <th scope="col">Pontos</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Até 5 segundos</th>
+                <td>100</td>
+              </tr>
+              <tr>
+                <th scope="row">De 5 a 10 segundos</th>
+                <td>70</td>
+              </tr>
+              <tr>
+                <th scope="row">De 10 a 20 segundos</th>
+                <td>40</td>
+              </tr>
+              <tr>
+                <th scope="row">Mais de 20 segundos</th>
+                <td>10</td>
+              </tr>
+              <tr>
+                <th scope="row">Resposta errada</th>
+                <td>0</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="conquistas">
+        <h2>Conquistas</h2>
+        <dl>
+          <dt>Primeiro passo</dt>
+          <dd>Acertou o primeiro código.</dd>
+          <dt>Relâmpago</dt>
+          <dd>Acertou em menos de 5 segundos.</dd>
+          <dt>Funcional</dt>
+          <dd>Acertou um código em Haskell.</dd>
+          <dt>Mente aberta</dt>
+          <dd>Acertou um código em Brainfuck.</dd>
+        </dl>
+        <p>
+          Para treinar antes de jogar, leia o
+          <a href="linguagens.html">guia para reconhecer linguagens de programação</a>.
+        </p>
+      </section>
+    </main>
+
+    <aside>
+      <h2>Continue explorando</h2>
+      <ul class="aside-links">
+        <li><a href="index.html#desafio">Jogar o desafio da rodada</a></li>
+        <li><a href="linguagens.html#comparativo">Comparar as linguagens</a></li>
+        <li><a href="index.html#ranking">Ver o ranking de exemplo</a></li>
+      </ul>
+    </aside>
+  </div>
+
+  <footer class="site-footer">
+    <address>
+      Contato: <a href="mailto:contato@polyglotquiz.example">contato@polyglotquiz.example</a>
+    </address>
+    <p>
+      <a href="linguagens.html">Guia de linguagens</a> ·
+      <a href="index.html">Voltar para a página inicial</a>
+    </p>
+    <p>
+      PolyglotQuiz, projeto de HTML e CSS. Atualizado em
+      <time datetime="2026-11-25">25 de novembro de 2026</time>.
+    </p>
+  </footer>
+</body>
+</html>

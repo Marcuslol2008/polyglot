@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Como reconhecer linguagens de programação | PolyglotQuiz</title>
+  <meta name="description" content="Guia com Python, Haskell, JavaScript e Brainfuck: veja o mesmo código em cada linguagem e aprenda as pistas de sintaxe para acertar o quiz.">
+  <link rel="canonical" href="https://marcuslol2008.github.io/polyglot/linguagens.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="PolyglotQuiz">
+  <meta property="og:title" content="Como reconhecer linguagens de programação">
+  <meta property="og:description" content="O mesmo código em Python, Haskell, JavaScript e Brainfuck, com as pistas de sintaxe de cada uma.">
+  <meta property="og:image" content="https://marcuslol2008.github.io/polyglot/images/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Logotipo PolyglotQuiz com um código em Haskell e quatro opções de linguagem">
+  <meta property="og:url" content="https://marcuslol2008.github.io/polyglot/linguagens.html">
+  <meta property="og:locale" content="pt_BR">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "@id": "https://marcuslol2008.github.io/polyglot/linguagens.html#pagina",
+        "name": "Como reconhecer linguagens de programação",
+        "description": "Guia com as pistas de sintaxe de Python, Haskell, JavaScript e Brainfuck.",
+        "url": "https://marcuslol2008.github.io/polyglot/linguagens.html",
+        "inLanguage": "pt-BR",
+        "dateModified": "2026-11-25",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "PolyglotQuiz",
+          "url": "https://marcuslol2008.github.io/polyglot/"
+        },
+        "breadcrumb": { "@id": "https://marcuslol2008.github.io/polyglot/linguagens.html#caminho" },
+        "mainEntity": {
+          "@type": "ItemList",
+          "numberOfItems": 4,
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "item": {
+                "@type": "ComputerLanguage",
+                "name": "Python",
+                "url": "https://marcuslol2008.github.io/polyglot/linguagens.html#python"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "item": {
+                "@type": "ComputerLanguage",
+                "name": "Haskell",
+                "url": "https://marcuslol2008.github.io/polyglot/linguagens.html#haskell"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "item": {
+                "@type": "ComputerLanguage",
+                "name": "JavaScript",
+                "url": "https://marcuslol2008.github.io/polyglot/linguagens.html#javascript"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "item": {
+                "@type": "ComputerLanguage",
+                "name": "Brainfuck",
+                "url": "https://marcuslol2008.github.io/polyglot/linguagens.html#brainfuck"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://marcuslol2008.github.io/polyglot/linguagens.html#caminho",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Início",
+            "item": "https://marcuslol2008.github.io/polyglot/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Linguagens",
+            "item": "https://marcuslol2008.github.io/polyglot/linguagens.html"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <p class="site-name"><a href="index.html">Polyglot<span>Quiz</span></a></p>
+    <p class="tagline">O jogo do <strong>Adivinhe a Linguagem</strong>: veja o código, escolha a linguagem e suba no ranking.</p>
+    <nav class="main-nav" aria-label="Navegação principal">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="index.html#desafio">Desafio</a></li>
+        <li><a href="index.html#ranking">Ranking</a></li>
+        <li><a href="index.html#curiosidades">Curiosidades</a></li>
+        <li><a href="linguagens.html" aria-current="page">Linguagens</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="index.html#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="layout">
+    <main id="conteudo">
+
+      <nav class="breadcrumb" aria-label="Você está em">
+        <ol>
+          <li><a href="index.html">Início</a></li>
+          <li aria-current="page">Linguagens</li>
+        </ol>
+      </nav>
+
+      <h1>Como reconhecer linguagens de programação</h1>
+      <p>
+        Cada linguagem deixa <strong>pistas</strong> no código: palavras-chave, símbolos e o jeito de
+        marcar blocos. Aqui você vê o mesmo problema, calcular o fatorial de um número, em três
+        linguagens, e um programa em <em>Brainfuck</em> para comparar.
+      </p>
+
+      <section id="guia">
+        <h2>Um código, várias linguagens</h2>
+
+        <article id="python">
+          <h3>Python</h3>
+          <pre><code>def fatorial(n):
+    return 1 if n &lt;= 1 else n * fatorial(n - 1)</code></pre>
+          <ul>
+            <li>Dois-pontos no fim da linha e <strong>recuo</strong> para marcar o bloco.</li>
+            <li>Palavras-chave em inglês: <code>def</code>, <code>return</code>, <code>if</code>, <code>else</code>.</li>
+          </ul>
+          <p>
+            <a href="index.html#curiosidades">Leia por que a indentação é a sintaxe do Python</a>.
+          </p>
+        </article>
+
+        <article id="haskell">
+          <h3>Haskell</h3>
+          <pre><code>fatorial :: Integer -&gt; Integer
+fatorial 0 = 1
+fatorial n = n * fatorial (n - 1)</code></pre>
+          <ul>
+            <li>Assinatura de tipos com <code>::</code> e seta <code>-&gt;</code>.</li>
+            <li>Casamento de padrões: um caso para o zero e outro para os demais números.</li>
+            <li>Sem chaves e sem <code>return</code>.</li>
+          </ul>
+        </article>
+
+        <article id="javascript">
+          <h3>JavaScript</h3>
+          <pre><code>const fatorial = (n) =&gt; (n &lt;= 1 ? 1 : n * fatorial(n - 1));</code></pre>
+          <ul>
+            <li><code>const</code> e a função seta <code>=&gt;</code>.</li>
+            <li>Operador ternário <code>? :</code> no lugar do <code>if</code>.</li>
+            <li>Chaves e ponto e vírgula são comuns em outros trechos do código.</li>
+          </ul>
+        </article>
+
+        <article id="brainfuck">
+          <h3>Brainfuck</h3>
+          <pre><code>++++++++[&gt;++++[&gt;++&gt;+++&gt;+++&gt;+&lt;&lt;&lt;&lt;-]&gt;+&gt;+&gt;-&gt;&gt;+[&lt;]&lt;-]&gt;&gt;.&gt;---.+++++++..+++.&gt;&gt;.&lt;-.&lt;.+++.------.--------.&gt;&gt;+.&gt;++.</code></pre>
+          <ul>
+            <li>Este programa imprime <q>Hello World!</q>. Calcular o fatorial exigiria dezenas de linhas.</li>
+            <li>Só 8 símbolos: <code>&gt; &lt; + - . , [ ]</code>.</li>
+            <li>Sem letras, sem nomes e sem números: tudo é uma fita de células e um ponteiro.</li>
+          </ul>
+          <p>
+            <a href="index.html#curiosidades">Leia a história do Brainfuck nas curiosidades</a>.
+          </p>
+        </article>
+      </section>
+
+      <section id="comparativo">
+        <h2>Comparativo rápido</h2>
+        <div class="table-wrap">
+          <table>
+            <caption>Ano, criador e principal pista de cada linguagem</caption>
+            <thead>
+              <tr>
+                <th scope="col">Linguagem</th>
+                <th scope="col">Ano</th>
+                <th scope="col">Criador</th>
+                <th scope="col">Paradigma</th>
+                <th scope="col">Pista principal</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Python</th>
+                <td><time datetime="1991">1991</time></td>
+                <td>Guido van Rossum</td>
+                <td>Multiparadigma</td>
+                <td>Recuo marca os blocos</td>
+              </tr>
+              <tr>
+                <th scope="row">Haskell</th>
+                <td><time datetime="1990">1990</time></td>
+                <td>Comitê acadêmico</td>
+                <td>Funcional puro</td>
+                <td>Assinatura com <code>::</code></td>
+              </tr>
+              <tr>
+                <th scope="row">JavaScript</th>
+                <td><time datetime="1995">1995</time></td>
+                <td>Brendan Eich</td>
+                <td>Multiparadigma</td>
+                <td>Seta <code>=&gt;</code> e <code>const</code></td>
+              </tr>
+              <tr>
+                <th scope="row">Brainfuck</th>
+                <td><time datetime="1993">1993</time></td>
+                <td>Urban Müller</td>
+                <td>Esotérica</td>
+                <td>Apenas 8 símbolos</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="jogar">
+        <h2>Hora de testar</h2>
+        <p>
+          Agora que você conhece as pistas, vá para o
+          <a href="index.html#desafio">desafio da rodada do PolyglotQuiz</a> e tente acertar rápido.
+        </p>
+      </section>
+
+    </main>
+
+    <aside>
+      <h2>Continue explorando</h2>
+      <ul class="aside-links">
+        <li><a href="index.html#desafio">Jogar o desafio da rodada</a></li>
+        <li><a href="sobre.html#pontuacao">Ver a tabela de pontuação</a></li>
+        <li><a href="index.html#contato">Sugerir um código misterioso</a></li>
+      </ul>
+    </aside>
+  </div>
+
+  <footer class="site-footer">
+    <address>
+      Contato: <a href="mailto:contato@polyglotquiz.example">contato@polyglotquiz.example</a>
+    </address>
+    <p>
+      <a href="sobre.html">Sobre o PolyglotQuiz</a> ·
+      <a href="index.html">Voltar para a página inicial</a>
+    </p>
+    <p>
+      PolyglotQuiz, projeto de HTML e CSS. Atualizado em
+      <time datetime="2026-11-25">25 de novembro de 2026</time>.
+    </p>
+  </footer>
+</body>
+</html>

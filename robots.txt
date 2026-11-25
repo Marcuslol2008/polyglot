@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /polyglot/prints/
+
+Sitemap: https://marcuslol2008.github.io/polyglot/sitemap.xml
