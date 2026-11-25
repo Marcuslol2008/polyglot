@@ -2,7 +2,7 @@
 
 Projeto desenvolvido para a disciplina **Linguagem de Script para Web** (IFTM - Campus Uberaba Parque Tecnológico, 2026).
 
-- **Tema escolhido:** quiz gamificado em que o jogador vê um trecho de código misterioso e adivinha a linguagem de programação entre 4 opções
+- **Tema escolhido:** Linguagens de Programação - quiz gamificado em que o jogador vê um trecho de código misterioso e adivinha a linguagem de programação entre 4 opções
 - **Site publicado (GitHub Pages):** [https://marcuslol2008.github.io/polyglot/](https://marcuslol2008.github.io/polyglot/)
 
 ## Atividade 1 — Página Semântica

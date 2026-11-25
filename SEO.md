@@ -39,7 +39,19 @@ Os nomes dos arquivos são curtos, em minúsculas e descritivos, sem parâmetros
 
 O JSON está dentro do `<head>` de cada página, em `<script type="application/ld+json">`. Conferi que o JSON é sintaticamente válido.
 
-Validação no [validator.schema.org](https://validator.schema.org/) e no Teste de pesquisa aprimorada do Google: **COLOQUE AQUI O PRINT**
+Validação no [validator.schema.org](https://validator.schema.org/):
+
+**Inicio**
+
+![Validação do JSON-LD da página inicial](prints/schema-index.png)
+
+**Linguagens**
+
+![Validação do JSON-LD da página Linguagens](prints/schema-linguagens.png)
+
+**Sobre**
+
+![Validação do JSON-LD da página Sobre](prints/schema-sobre.png)
 
 ## 4. robots.txt e sitemap.xml
 
