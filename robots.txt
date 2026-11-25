@@ -1,4 +1,3 @@
-# robots.txt do PolyglotQuiz
 User-agent: *
 Disallow: /polyglot/prints/
 

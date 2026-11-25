@@ -31,8 +31,6 @@ Os nomes dos arquivos são curtos, em minúsculas e descritivos, sem parâmetros
 
 ## 3. JSON-LD
 
-O tema é um quiz, então usei tipos que descrevem as páginas de forma honesta:
-
 | Página | Tipos schema.org |
 |---|---|
 | Início | `WebSite` |
@@ -59,24 +57,22 @@ Validação no [validator.schema.org](https://validator.schema.org/) e no Teste 
 
 ## 6. Lighthouse antes e depois
 
-Medição no Chrome (aba anônima, F12, Lighthouse, modo navegação, dispositivo celular, todas as categorias).
-
 - **Antes:** versão da Atividade 1 (sem canonical, Open Graph, favicon e JSON-LD).
 - **Depois:** versão atual.
 
 | Categoria | Antes | Depois |
 |---|---|---|
-| Desempenho | PREENCHER | PREENCHER |
-| Acessibilidade | PREENCHER | PREENCHER |
-| Boas práticas | PREENCHER | PREENCHER |
-| SEO | PREENCHER | PREENCHER |
+| Desempenho | 99 | 100 |
+| Acessibilidade | 100 | 100 |
+| Boas práticas | 96 | 100 |
+| SEO | 100 | 100 |
 
 Prints dos relatórios:
 
 - Antes: `prints/lighthouse-antes.png`
 - Depois: `prints/lighthouse-depois.png`
 
-O que mudou e deve refletir nas notas:
+O que mudou:
 
 1. Favicon: tira o erro 404 do console, que reprovava Boas práticas.
 2. Canonical e meta description únicos por página: itens da auditoria de SEO.
