@@ -20,7 +20,7 @@ Nesta etapa foi desenvolvida a página inicial do projeto utilizando exclusivame
 
 ### Validação W3C
 
-![Resultado da validação no W3C Nu Html Checker, sem erros](prints/validador.png)
+![Resultado da validação no W3C Nu Html Checker, sem erros](prints/validador-index.png)
 
 ## Atividade 2 — SEO
 
@@ -36,7 +36,9 @@ Nesta etapa o site foi otimizado para buscadores e ganhou duas páginas novas, q
 
 ### Validação W3C
 
-![Resultado da validação no W3C Nu Html Checker, sem erros](prints/validador.png)
+![Resultado da validação no W3C Nu Html Checker, sem erros](prints/validador-index.png)
+![](prints/validador-linguagens.png)
+![](prints/validador-sobre.png)
 
 ### Lighthouse Antes/Depois
 ![Medições do site com Lighthouse na versão anterior](prints/lighthouse-antes.png)
